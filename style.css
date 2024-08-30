@@ -54,7 +54,7 @@ article {
 
 .top header {
   height: 90vh;
-  background: url(../images/book.jpg) no-repeat center top/cover;
+  background: url(https://github.com/Mayu-Nakano/Mayu-Nakano.fnd29/blob/main/book.jpg?raw=trueg) no-repeat center top/cover;
   padding-top: 50px;
   margin-bottom: 64px;
 }
@@ -86,23 +86,6 @@ article {
 
 .link li a:hover {
   filter: brightness(105%);
-}
-
-
-
-footer {
-  background: url(../images/footer_mt.svg) no-repeat right top/200px;
-  margin-top: 60px;
-  padding-top: 68px;
-}
-
-footer p {
-  background-color: #f5f5f5;
-}
-
-footer p img {
-  width: 188px;
-  transform: translateY(-28px);
 }
 
 
