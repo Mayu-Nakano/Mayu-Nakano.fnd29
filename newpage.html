@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/line-art-book-vector-illustration.svg" type="image/svg+xml">
+
+    <title>追加ページ</title>
+  </head>
+
+  <body class="top">
+
+    <header>
+
+      <nav class="menuGroup">
+
+        <input class="menu-btn" type="checkbox" id="menu-btn">
+
+        <label class="menu-icon" for="menu-btn">
+          <span class="navicon"></span>
+        </label>
+
+        <ul class="menu">
+          <li><a href="index.html">home</a></li>
+          <li><a href="newpage.html">addition</a></li>
+        </ul>
+
+      </nav>
+
+    </header>
+
+
+    <main>
+
+      <main>
+
+        <h1 class="vacuum"></h1>
+
+        <form id="addBookForm">
+
+          <h1 class="new">新しい書籍を追加</h1>
+
+          <label for="bookTitle">タイトル：</label>
+          <input type="text" id="bookTitle" name="bookTitle" required>
+          <br><br>
+
+          <label for="bookAuthor">著者：</label>
+          <input type="text" id="bookAuthor" name="bookAuthor" required>
+          <br><br>
+
+          <label for="bookImage">画像URL：</label>
+          <input type="text" id="bookImage" name="bookImage" required>
+          <br><br>
+
+          <label for="bookWikiLink">Wikipediaリンク：</label>
+          <input type="text" id="bookWikiLink" name="bookWikiLink" required>
+          <br><br>
+
+          <button type="submit">追加</button>
+
+        </form>
+
+    </main>
+
+
+      <script src="challenge.js"></script>
+
+  </body>
+</html>
