@@ -204,6 +204,8 @@ ul.link li span {
   max-height: 0;
   transition: max-height .6s;
   text-align: center;
+  padding: 0;
+  list-style: none;
 }
 
 .menuGroup .menu li a:hover {
