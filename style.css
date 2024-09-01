@@ -1,13 +1,27 @@
 @charset "utf-8";
 
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
 
 body {
-  font-family: 'Catamaran','Noto Sans JP',sans-serif;
+  font-family: 'Catamaran', 'Noto Sans JP', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   background-color: #eaeaf1;
   color: #2c2c2c;
   padding: 20px;
+  margin: 0;
 }
 
 img {
@@ -30,14 +44,12 @@ article {
   line-height: 60px;
 }
 
-
 .man {
   position: relative;
   text-align: center;
 }
 
 .man img {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   filter: brightness(90%) blur(2px);
 }
 
@@ -51,10 +63,9 @@ article {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-
 .top header {
   height: 90vh;
-  background: url(https://github.com/Mayu-Nakano/Mayu-Nakano.fnd29/blob/main/book.jpg?raw=trueg) no-repeat center top/cover;
+  background: url(../images/book.jpg) no-repeat center top/cover;
   padding-top: 50px;
   margin-bottom: 64px;
 }
@@ -62,8 +73,6 @@ article {
 .top header h1 img {
   width: 240px;
 }
-
-
 
 .link {
   padding: 0 20px;
@@ -80,7 +89,7 @@ article {
 
 .link li a span {
   display: block;
-  padding: 12px 15px 10px;
+  padding: 12px 15px;
   font-size: 18px;
 }
 
@@ -88,6 +97,20 @@ article {
   filter: brightness(105%);
 }
 
+footer {
+  background: url(../images/footer_mt.svg) no-repeat right top/200px;
+  margin-top: 60px;
+  padding-top: 68px;
+}
+
+footer p {
+  background-color: #f5f5f5;
+}
+
+footer p img {
+  width: 188px;
+  transform: translateY(-28px);
+}
 
 ul.link {
   list-style: none;
@@ -115,10 +138,12 @@ ul.link li img {
 }
 
 ul.link li p {
-  width: 90%;
+  width: 100%;
+  position: absolute;
   padding: 10px;
   font-size: 30px;
   font-weight: bold;
+  transform: translate(-50%, -80%);
 }
 
 ul.link li span {
@@ -128,8 +153,7 @@ ul.link li span {
   color: #555;
 }
 
-
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 920px) {
   .top {
     display: flex;
   }
@@ -158,10 +182,7 @@ ul.link li span {
     flex-basis: 47%;
     margin-bottom: 20px;
   }
-
-
 }
-
 
 .menuGroup {
   position: fixed;
@@ -193,20 +214,17 @@ ul.link li span {
   content: '';
   height: 100%;
   position: absolute;
-  transition: all .4s ease-out;
+  transition: all 0.4s ease-out;
   width: 100%;
 }
 
 .menuGroup .menu {
   background-color: rgba(189, 197, 205, 0.5);
   font-size: 20px;
-  color: #2c2c2c;
   overflow: hidden;
   max-height: 0;
-  transition: max-height .6s;
+  transition: max-height 0.6s;
   text-align: center;
-  padding: 0;
-  list-style: none;
 }
 
 .menuGroup .menu li a:hover {
@@ -226,7 +244,7 @@ ul.link li span {
 
 .menuGroup .menu-btn:checked ~ .menu {
   max-height: 340px;
-  transition: max-height .7s;
+  transition: max-height 0.7s;
 }
 
 .menuGroup .menu-btn:checked ~ .menu-icon .navicon::before {
@@ -238,7 +256,6 @@ ul.link li span {
   transform: rotate(45deg);
   top: 0;
 }
-
 
 form {
   margin-bottom: 30px;
@@ -288,8 +305,6 @@ form button:hover {
   font-weight: bold;
 }
 
-
-
 .thetitle {
   color: #ffffff;
   position: absolute;
@@ -300,6 +315,3 @@ form button:hover {
   font-weight: bold;
   font-size: 35px;
 }
-
-
-
