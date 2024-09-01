@@ -129,7 +129,7 @@ ul.link li span {
 }
 
 
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 950px) {
   .top {
     display: flex;
   }
@@ -169,6 +169,7 @@ ul.link li span {
   top: 0;
   width: 100%;
   z-index: 100;
+  list-style: none;
 }
 
 .menuGroup .menu-icon {
