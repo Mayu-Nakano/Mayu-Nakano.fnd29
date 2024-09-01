@@ -200,6 +200,7 @@ ul.link li span {
 .menuGroup .menu {
   background-color: rgba(189, 197, 205, 0.5);
   font-size: 20px;
+  color: #2c2c2c;
   overflow: hidden;
   max-height: 0;
   transition: max-height .6s;
