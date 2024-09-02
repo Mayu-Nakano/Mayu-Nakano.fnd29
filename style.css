@@ -224,6 +224,7 @@ ul.link li span {
 .menuGroup .menu li a {
   display: block;
   padding: 20px 20px;
+  color: #2c2c2c;
   text-transform: uppercase;
 }
 
@@ -289,11 +290,11 @@ form button:hover {
   margin: 7em 7em;
 }
 
-.new {
+/* .new {
   font-size: 30px;
   text-align: center;
   font-weight: bold;
-}
+} */
 
 
 .thetitle {
