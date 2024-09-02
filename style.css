@@ -1,5 +1,14 @@
 @charset "utf-8";
 
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+
 body {
   font-family: 'Catamaran','Noto Sans JP',sans-serif;
   font-size: 16px;
@@ -36,12 +45,12 @@ article {
 }
 
 .man img {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  filter: brightness(90%) blur(2px);
+  box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.5);
+  filter: brightness(70%) blur(2px);
 }
 
 .man p {
-  color: #f4f4f4;
+  color: #ffffff;
   font-size: 30px;
   position: absolute;
   left: 50%;
@@ -63,9 +72,8 @@ article {
 }
 
 
-
 .link {
-  padding: 0 20px;
+  padding: 0px 30px;
 }
 
 .link li {
@@ -92,7 +100,7 @@ ul.link {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  gap: 40px;
 }
 
 ul.link li {
@@ -216,6 +224,7 @@ ul.link li span {
 .menuGroup .menu li a {
   display: block;
   padding: 20px 20px;
+  color: #2c2c2c;
   text-transform: uppercase;
 }
 
@@ -224,7 +233,7 @@ ul.link li span {
 }
 
 .menuGroup .menu-btn:checked ~ .menu {
-  max-height: 340px;
+  max-height: 320px;
   transition: max-height .7s;
 }
 
@@ -257,7 +266,7 @@ form input[type="text"] {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #9c9c9c;
+  border: 2px solid #171717;
   border-radius: 10px;
 }
 
@@ -265,14 +274,13 @@ form button {
   background-color: #333;
   color: white;
   padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.2s ease;
 }
 
 form button:hover {
-  background-color: #e38741;
+  background-color: #a9a8e4;
   color: #000;
 }
 
@@ -282,11 +290,10 @@ form button:hover {
 }
 
 .new {
-  font-size: 30px;
+  font-size: 35px;
   text-align: center;
   font-weight: bold;
 }
-
 
 
 .thetitle {
